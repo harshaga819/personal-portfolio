@@ -265,12 +265,15 @@ li{
 .card-hero-header{
     overflow: hidden;
     border-radius: 0.5rem;
-    height: 15rem;
     background-size:cover;
+}
+.card-hero-header img{
+    background-size: cover;
+    width: 100%;
 }
 .card-footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0.75rem;
     font-weight: 700;
@@ -283,8 +286,11 @@ li{
     padding: 0.5rem 1.25rem;
     border-radius: 1rem;
     background-color: #141417;
-    color: #fff;
     font-size: 1rem;
+}
+.card-btn a{
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 /* Education Section */

@@ -1,0 +1,76 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:rgb(5, 10, 48);
+    --primary-text-color:#ffffff;
+    --navbar-name-color:rgb(34 211 238);
+    --text-hover:#0d6efd;
+    --name-text-color:rgb(127, 96, 238);
+}
+body{
+    background-color: var(--background-color);
+}
+header{
+    font-size: 2.5rem;
+    color: var(--name-text-color);
+    text-align: center;
+    margin: 1rem 0rem;
+}
+.description{
+    font-size: 2rem;
+    color: var(--text-hover);
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.description p{
+    margin: 1rem .5rem;
+    padding: 0rem 10rem;
+    font-size: 1.2rem;
+    
+    color: var(--primary-text-color);
+    text-align: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.links a{
+    margin: 1.2rem;
+    size: 3rem;
+    font-size: 4rem;
+}
+button{
+    background-color: var(--text-hover);
+    border: none;
+    border-radius: .3rem;
+    margin-bottom: 1.6rem;
+}
+.live-link h4{
+    color: var(--background-color);
+    margin: .3rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+.technology-used{
+    margin: 1rem;
+    text-align: left;
+}
+.technology-used-heading{
+    text-align: center;
+    color: var(--text-hover);
+    font-size: 2rem;
+}
+.technology-used ol{
+    text-align: start;
+    margin: 2rem 0rem 0rem 2rem;
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+}
+.technology-used li{
+    margin: 1rem .5rem;
+}
