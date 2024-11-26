@@ -129,6 +129,7 @@ li{
 
 .about{
     display: block;
+    position: relative;
     padding: 2rem 2.5rem;
 }
 .about-heading{
@@ -174,6 +175,7 @@ li{
 
 .skills{
     display: block;
+    position: relative;
     padding: 1rem;
 }
 .skill-heading{
@@ -232,6 +234,7 @@ li{
 
 .projects{
     display: block;
+    position: relative;
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -278,7 +281,7 @@ li{
     align-items: center;
     padding: 0.75rem;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 .card-btn{
     width: 40%;
@@ -292,12 +295,14 @@ li{
 .card-btn a{
     color: var(--primary-text-color);
     text-decoration: none;
+    width: 100%;
 }
 
 /* Education Section */
 
 .education{
     margin-top: 2rem;
+    position: relative;
     display: block;
     padding: 1rem;
 }
