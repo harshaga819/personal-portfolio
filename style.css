@@ -4,6 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth; 
+}
 :root{
     --background-color:rgb(5, 10, 48);
     --primary-text-color:#ffffff;
