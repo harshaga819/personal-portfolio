@@ -10,6 +10,7 @@ html {
 }
 :root{
     --background-color:rgb(5, 10, 48);
+    --footer-color:rgb(21, 28, 84);
     --primary-text-color:#ffffff;
     --navbar-name-color:rgb(34 211 238);
     --text-hover:#0d6efd;
@@ -36,6 +37,7 @@ li{
     justify-content: space-between;
     position: sticky;
     top: 0rem;
+    width: 100vw;
     background-color: var(--background-color);
     z-index: 2;
 }
@@ -64,11 +66,17 @@ li{
     background-color: aqu;
     transition: background 3s ease-in-out;
 }
+.nav-link::after{
+    color: var(--text-hover);
+}
 .nav-item::before{
     color: var(--primary-text-color);
 }
 .nav-item::after{
     color: var(--text-hover);
+}
+.nav-icon{
+    display: none;
 }
 
 /* Home */
@@ -144,6 +152,7 @@ li{
 .about-content{
     padding: 2rem 2.5rem;
     display: flex;
+    justify-content: space-between;
 }
 .about-image{
     width: 50%;
@@ -361,6 +370,13 @@ li{
     margin-left: 2rem;
 }
 
+/* Footer */
+.footer{
+    background-color: var(--footer-color);
+    width: 100%;
+    height: 3rem;
+}
+
 /* Key Frames */
 
 @keyframes process {
@@ -369,11 +385,63 @@ li{
     }
   }
 
-/* Media Query */
-
+/* Responsive Design for Small Screens */
 @media (max-width: 686px){
+    .body{
+        overflow-x: hidden;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-icon{
+        margin: 1rem;
+        display: flex;
+    }
     .home{
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .home-text{
+        width:100%;
+    }
+    .home-image{
+        justify-content: start;
+        width: 100%;
+    }
+    .about-content{
+        flex-wrap: wrap;
+        margin-top: 0rem;
+        justify-content: center;
+        padding-top: 0rem;
+    }
+    .about-text{
+        width: 100%;
+        margin-top: 10rem;
+    }
+    .about-image{
+        margin-left: 0rem;
+    }
+    .skill-contant{
+        padding: 0rem;
+    }
+    .project-content{
+        flex-wrap: wrap;
+    }
+    .education-history{
+        width: 100%;
+        padding: 0rem;
+    }
+    .education-level{
+        width: 100%;
+    }
+    .education-level-contant{
+        display: flex;
+        justify-content: space-between;
+    }
+    .education-img{
+        position: relative;
+        right: 100rem;
+        width: 0%;
+    }
 }
+
