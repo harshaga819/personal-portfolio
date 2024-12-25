@@ -415,11 +415,11 @@ li{
     }
     .about-text{
         width: 100%;
-        margin-top: 10rem;
+        margin-top: 5rem;
         padding: 0rem;
     }
     .image{
-        top: 6rem;
+        top: 2rem;
         left: 50%;
         transform: translateX(-50%);
     }
