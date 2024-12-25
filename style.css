@@ -75,9 +75,6 @@ li{
 .nav-item::after{
     color: var(--text-hover);
 }
-.nav-icon{
-    display: none;
-}
 
 /* Home */
 
@@ -114,10 +111,8 @@ li{
 .resume-button a{
     color: var(--primary-text-color);
     font-size: 1rem;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.connect{
-    margin: 0rem 1.5rem;
 }
 .connect a{
     margin: .5rem;
@@ -142,7 +137,7 @@ li{
 .about{
     display: block;
     position: relative;
-    padding: 2rem 2.5rem;
+    padding: 1rem;
 }
 .about-heading{
     font-size: 2.5rem;
@@ -170,7 +165,7 @@ li{
     top: 6rem;
 }
 .image:hover{
-    transform: scale(1.1) !important; 
+    transform: scale(1.1);
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 }
@@ -204,7 +199,6 @@ li{
 }
 .skill-name{
     display: block;
-    width: 25rem;
     margin: 1rem 3.5rem;
 }
 .skill-name-heading{
@@ -387,15 +381,15 @@ li{
 
 /* Responsive Design for Small Screens */
 @media (max-width: 686px){
+    html {
+        scroll-padding-top: 10px;
+        scroll-behavior: smooth; 
+    }
     .body{
         overflow-x: hidden;
     }
     .nav{
         display: none;
-    }
-    .nav-icon{
-        margin: 1rem;
-        display: flex;
     }
     .home{
         flex-wrap: wrap;
@@ -403,26 +397,55 @@ li{
     }
     .home-text{
         width:100%;
+        padding: 0rem;
     }
     .home-image{
-        justify-content: start;
+        width: 100%;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    .home-image img{
+        height: 35rem;
         width: 100%;
     }
     .about-content{
         flex-wrap: wrap;
-        margin-top: 0rem;
+        margin: 0rem;
         justify-content: center;
-        padding-top: 0rem;
+        padding: 0rem;
     }
     .about-text{
         width: 100%;
         margin-top: 10rem;
+        padding: 0rem;
+    }
+    .image{
+        top: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about-text p{
+        text-align:center;
     }
     .about-image{
-        margin-left: 0rem;
+        width: 100%;
+    }
+    .skill-heading{
     }
     .skill-contant{
         padding: 0rem;
+        width: 100%;
+    }
+    .skill-name{
+        text-align: start;
+    }
+    .skill-name-heading{
+        text-align: center;
+    }
+    .skill-dashboard{
+        width: 100%;
+    }
+    .sub-skill{
+        width: 15rem;
     }
     .project-content{
         flex-wrap: wrap;
