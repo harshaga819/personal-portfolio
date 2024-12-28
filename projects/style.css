@@ -29,7 +29,6 @@ header{
     margin: 1rem .5rem;
     padding: 0rem 10rem;
     font-size: 1.2rem;
-    
     color: var(--primary-text-color);
     text-align: center;
 }
@@ -76,4 +75,10 @@ button{
 }
 .technology-used li{
     margin: 1rem .5rem;
+}
+
+@media(max-width: 686px){
+    .description p{
+        padding: 0rem;
+    }
 }
