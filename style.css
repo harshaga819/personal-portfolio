@@ -287,7 +287,7 @@ li{
 }
 .card{
     margin: 1rem;
-    width: min(300px, 100%);
+    width: min(300px, 450px);
     background-color: #fefefe;
     border-radius: 1rem;
     padding: 0.5rem;
@@ -321,17 +321,23 @@ li{
 }
 .card-btn{
     width: 40%;
+    height: 2rem;
     cursor: pointer;
     border: none;
-    padding: 0.5rem 1.25rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 1rem;
     background-color: #141417;
     font-size: 1rem;
 }
 .card-btn a{
     color: var(--primary-text-color);
+    padding: .3rem;
+    height: 100%;
     text-decoration: none;
-    width: 100%;
+    width: 100vw;
 }
 .cards-container{
     display: flex;
@@ -548,7 +554,7 @@ li{
     }
     .cards-container{
         transition: transform 0.5s ease-in-out;
-        width: calc(100% + 40px);
+        width: calc(100% + 50px);
         padding: 0 20px;
     }
     .arrows {
