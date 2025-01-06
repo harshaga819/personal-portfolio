@@ -75,6 +75,7 @@ li{
 .mobile-nav{
     position: fixed;
     left: -55rem;
+    top: 0rem;
     z-index: 10;
     display: flex;
     background-color: var(--background-color);
@@ -89,7 +90,7 @@ li{
 .nav-list{
     display:block;
     position: relative;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     left: 45%;
     transform: translateX(-50%);
     z-index: 10;
@@ -108,17 +109,17 @@ li{
 }
 .name-text{
     font-size: 2.5rem;
-    margin: 1rem;
+    margin-left: .5rem;
 }
 .name-color{
     color: var(--name-text-color);
 }
 .intro-text{
     font-size: 1.2rem;
-    margin: 1rem;
+    margin: .5rem;
 }
 .resume-button{
-    margin: 1.5rem 1rem 1.5rem 1rem;
+    margin: 1.5rem 1rem 1.5rem .5rem;
     background: linear-gradient(30deg,purple,purple,blue) ;
     width: 6.5rem;
     height: 2.5rem;
@@ -439,6 +440,79 @@ li{
     margin-left: 2rem;
 }
 
+/* Connect Section */
+.connect{
+    margin-top: 2rem;
+    position: relative;
+    display: block;
+    padding: 1rem;
+}
+.connect-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--name-text-color);
+    margin-bottom: .5rem;
+}
+.connect-contant{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    width: 100%;
+}
+.connect-contant-input{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+form{
+    display: grid;
+    width: 100%;
+}
+.input{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    margin: 1rem 1rem;
+    width: 35%;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+}
+.message{
+    height: 5rem;
+}
+input::placeholder {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea::placeholder {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem;
+    margin: 1rem .2rem;
+    border: none;
+    border-radius: 2rem;
+    width: 6.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(30deg,purple,purple,blue) ;
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+.form-button:hover {
+    background: linear-gradient(30deg, blue, purple, purple);
+    transition: all 0.5s ease-in-out;
+}
+
 /* Footer */
 .footer{
     background-color: var(--footer-color);
@@ -580,5 +654,13 @@ li{
         position: relative;
         right: 100rem;
         width: 0%;
+    }
+    .connect-contant{
+        padding: 1rem 0rem;
+    }
+    .input{
+        padding: 1rem;
+        margin: 1rem 1rem;
+        width: 70%;
     }
 }

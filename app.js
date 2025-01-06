@@ -64,5 +64,25 @@ let w = window.innerWidth;
 
 // scrolling cards infinite time only if screen size is less then 687 px
 if(w<687){
-setInterval(nextSlide, 4000);
+    setInterval(nextSlide, 4000);
 }
+
+// Reseting the form fields
+
+let form = document.getElementById("contact-form");
+let submit =document.querySelectorAll(".form-button");
+
+function clearForm() {
+    form.reset();
+}
+
+submit.addEventListener('click', clearForm);
+
+        // Check if the user has returned from Formspree thank you page
+        window.onload = function () {
+            // This will refresh the page only when the page is loaded after the form submission
+            if (window.location.search.indexOf('sent=true') !== -1) {
+                // Refresh the page to clear form data
+                window.location.reload();
+            }
+        };
