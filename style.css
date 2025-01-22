@@ -72,6 +72,11 @@ li{
 .menu-icon,mobile-nav {
     display: none;
 }
+.menu-icon i {
+    padding: 1rem 1rem 0rem 1rem;
+    font-size: 3.5rem;
+    color: var(--primary-text-color);
+}
 .mobile-nav{
     position: fixed;
     left: -55rem;
