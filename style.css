@@ -126,7 +126,7 @@ li{
     padding-left: 1rem;
 }
 .resume-button{
-    margin: 1.5rem 1rem 1.5rem .5rem;
+    margin: 1.5rem 1rem 0rem .5rem;
     background: linear-gradient(30deg,purple,purple,blue) ;
     width: 6.5rem;
     height: 2.5rem;
@@ -146,7 +146,7 @@ li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .connect a{
-    margin: .5rem;
+    margin: 0rem .5rem;
     font-size: 2.5rem;
     color: var(--primary-text-color);
 }
