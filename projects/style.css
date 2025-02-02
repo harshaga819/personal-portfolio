@@ -78,6 +78,9 @@ button{
 }
 
 @media(max-width: 686px){
+    .header{
+        padding: 0rem .5rem;
+    }
     .description p{
         padding: 0rem;
     }
