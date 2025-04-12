@@ -19,7 +19,7 @@
     max-width: 1000px;
     margin: auto;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .project-title {
@@ -59,7 +59,7 @@
   .section-box {
     background-color: var(--card-bg-dark);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: var(--shadow-dark);
     margin-bottom: 2rem;
   }
