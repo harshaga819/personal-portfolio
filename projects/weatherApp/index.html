@@ -2,118 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thundra Project</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
-  <style>
-    :root {
-      --bg-color: #0e1a12;
-      --text-color: #ffffff;
-      --box-color: #1f4037;
-      --highlight-color: #00c896;
-      --accent: #00b16a;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #0e1a12, #183d2c);
-      color: var(--text-color);
-      margin: 0;
-      padding: 2rem;
-    }
-
-    .project-container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .project-title {
-      text-align: center;
-      font-size: 2.5rem;
-      color: var(--highlight-color);
-      margin-bottom: 1.5rem;
-    }
-
-    .project-links {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .project-links a {
-      margin: 0 1rem;
-      font-size: 2rem;
-      color: var(--text-color);
-      text-decoration: none;
-    }
-
-    .live-button {
-      background: var(--accent);
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 0.4rem;
-      font-size: 1rem;
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .live-button:hover {
-      background: #02915d;
-    }
-
-    .section-box {
-      background-color: var(--box-color);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-
-    .section-box h3 {
-      font-size: 1.8rem;
-      color: var(--highlight-color);
-      margin-bottom: 1rem;
-    }
-
-    .section-box p,
-    .section-box ul,
-    .section-box ol {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--text-color);
-    }
-
-    .section-box li {
-      margin-bottom: 0.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .project-title {
-        font-size: 2rem;
-      }
-
-      .project-links a {
-        font-size: 1.5rem;
-      }
-
-      .section-box p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thundra</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/projects/style.css" />
 </head>
-<body>
+<body class="dark-mode">
   <div class="project-container">
     <h1 class="project-title">Thundra</h1>
 
     <div class="project-links">
-      <a href="https://github.com/harshaga819/weatherForecasting" target="_blank"><i class='bx bxl-github'></i></a>
-      <a class="live-button" href="https://thundra.netlify.app/" target="_blank">Live Demo</a>
+      <a href="https://github.com/harshaga819/weatherForecasting" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a class="live-button" href="https://thundra.netlify.app/" target="_blank">
+        Live Demo
+      </a>
     </div>
 
     <div class="section-box">
       <h3>Description</h3>
-      <p><span style="color: var(--highlight-color);">Thundra</span> is a dynamic weather application built using HTML, CSS, and JavaScript. It features location-based weather reporting, providing real-time updates for any area with just a button click. Thundra enhances user experience with its customizable interface, allowing users to change the app's color to match their preferences. Designed for both function and visual appeal, Thundra blends modern web development with user-first design.</p>
+      <p><span class="highlight"><b>Thundra</b></span> is a dynamic weather application built using HTML, CSS, and JavaScript. It features location-based weather reporting, providing real-time updates for any area with just a button click. Thundra enhances user experience with its customizable interface, allowing users to change the app's color to match their preferences. Designed for both function and visual appeal, Thundra blends modern web development with user-first design.</p>
     </div>
 
     <div class="section-box">
