@@ -1,83 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/projects/style.css">
-    <title>IPL 2025 Auction Analysis</title>
-    <script src="https://kit.fontawesome.com/0399badfd1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPL 2025 Auction Analysis</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="dark-mode">
+  <div class="project-container">
+    <h1 class="project-title">IPL 2025 Auction Analysis</h1>
+    
+    <div class="project-links">
+      <a href="https://github.com/harshaga819/ipl2025AuctionAnalysis-" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a class="live-button" href="/assets/pdf/Report_IPL2025AuctionAnalysis.pdf" target="_blank">
+        Report PDF
+      </a>
+    </div>
 
-<body>
-    <header>
-        <h1>IPL 2025 Auction Analysis</h1>
-    </header>
-    <section>
-        <div class="links">
-            <a href="https://github.com/harshaga819/ipl2025AuctionAnalysis-" target="_blank"><i
-                    class='bx bxl-github'></i></a>
-            <a href="/assets/pdf/Report_IPL2025AuctionAnalysis.pdf" target="_blank">
-                <button class="live-link">
-                    <h4>Report</h4>
-                </button>
-            </a>
-        </div>
-        
-        <div class="description">
-            <div class="description-heading">
-                <h3>Description</h3>
-            </div>
-            <p> <span><b>IPL 2025 Auction Data Analysis</b></span> This project delves into the dynamic landscape of the
-                IPL 2025 auction, uncovering critical insights into team spending strategies, player valuations, and
-                financial trends. By leveraging data scraping and analysis techniques, I extracted and examined key
-                factors such as player categories, base price vs. sold price, team-wise budget allocations, and spending
-                trends. The dataset includes details on teams, player roles (batsman, bowler, all-rounder), auction
-                prices, and market demand, providing a comprehensive view of the auction dynamics.</p>
+    <div class="section-box">
+      <h3>Description</h3>
+      <p><span class="highlight"><b>IPL 2025 Auction Data Analysis</b></span> explores team strategies, player valuations, and financial trends during the 2025 IPL auction. Using data scraping and analysis, the project investigates key elements like base price vs. sold price, team budgets, and role-based spending.</p>
+      <p>The project utilizes <b>Python</b> and its data science stack: <b>BeautifulSoup</b> for scraping, <b>Pandas</b> for analysis, and <b>Matplotlib</b>/<b>Seaborn</b> for visualization. With EDA, it reveals the most expensive players, team-wise spend patterns, and market demand for player types.</p>
+      <p>This analysis tells the story behind how franchises construct squads and make budget decisions. It offers valuable insights for analysts, managers, and fans into trends and strategies—highlighting how data science is shaping the future of sports analytics.</p>
+    </div>
 
-            <p>The project is powered by Python, utilizing libraries like BeautifulSoup for web scraping, Pandas for
-                data manipulation, Matplotlib and Seaborn for data visualization, and NumPy for numerical analysis.
-                Through extensive exploratory data analysis (EDA), I identified patterns such as the most expensive
-                buys, the teams that spent the most, and the types of players that attracted the highest bids.
-                Interactive visualizations illustrate the distribution of spending, team composition strategies, and
-                market trends, helping decode the decision-making process behind each franchise’s purchases.</p>
-
-            <p>Beyond numbers, this project tells the fascinating story of how IPL teams build their squads and optimize
-                their budgets. It provides valuable insights for cricket analysts, franchise managers, and fans eager to
-                understand the financial and strategic aspects of the auction. By predicting player demand trends and
-                analyzing past auction patterns, this study serves as a foundation for future decision-making in
-                franchise cricket. The project highlights the power of data science in sports analytics, offering
-                actionable insights into one of the most exciting events in the cricketing world.</p>
-
-        </div>
-
-        <div class="technology-used">
-            <div class="technology-used-heading">
-                <h3>Technology Used</h3>
-            </div>
-            <ol>
-                <li>
-                    <h4>Python</h4>
-                </li>
-                <li>
-                    <h4>Numpy</h4>
-                </li>
-                <li>
-                    <h4>Pandas</h4>
-                </li>
-                <li>
-                    <h4>Matplotlib</h4>
-                </li>
-                <li>
-                    <h4>Seaborn</h4>
-                </li>
-                <li>
-                    <h4>Data Visualization</h4>
-                </li>
-            </ol>
-        </div>
-    </section>
+    <div class="section-box">
+      <h3>Technologies Used</h3>
+      <ol>
+        <li>Python</li>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        <li>Data Visualization</li>
+      </ol>
+    </div>
+  </div>
 </body>
-
 </html>
