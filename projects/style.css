@@ -55,6 +55,11 @@
   .project-links .live-button:hover {
     background: #4f46e5;
   }
+
+  .git-button i{
+    display: inline-block;
+    transform: scale(2);
+  }
   
   .section-box {
     background-color: var(--card-bg-dark);
