@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Customer segmentation using K-Means clustering. Explore how businesses identify and target customer groups using machine learning and data analysis.">
+  <title>Customer Segmentation Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Segmentation using K-Means Clustering</h1>
+  </header>
+
+  <section class="link">
+    <a href="https://github.com/harshaga819/Customer-Segmentation" class="button" target="_blank">View Project on GitHub</a>
+  </section>
+
+  <section>
+    <h2>Home</h2>
+    <p>This project explores how customers can be segmented into meaningful groups using K-Means Clustering. I started this project out of curiosity about how businesses understand their customers to improve marketing strategies.</p>
+  </section>
+
+  <section>
+    <h2>Problem Statement</h2>
+    <p>The goal was to identify customer segments based on behavior. Such segmentation helps businesses target the right audience, offer personalized experiences, and improve customer retention.</p>
+  </section>
+
+  <section>
+    <h2>Exploratory Data Analysis</h2>
+    <div class="eda-slider">
+      <div class="eda-slide">
+        <img src="images/amount_distribution.png">
+        <p>The distribution of transaction amounts shows a strong right skew, indicating a majority of low-value transactions and a few high-value ones which could affect average metrics.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/quantity_distribution.png">
+        <p>Most purchases are for small quantities, typically 1–3 units. Bulk orders are rare. This reflects common consumer purchasing behavior in retail</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/profit_distribution.png">
+        <p>Profit values show with many near-zero values. This suggests thin profit margins and the possibility of many low-profit items or frequent discounts.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/category_vs_amount_pointplot.png">
+        <p>Phones and Chairs show consistently high profits, making them top-performing items. Binders, Tables, and Bookcases display negative or very low average profits, indicating potential loss-making areas or heavy discounting.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/quantity_vs_profit_regression.png">
+        <p>There’s no clear linear correlation between quantity and profit. Profitability may decline with larger orders — likely due to volume-based discounts.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/swarmplot_profit_category.png">
+        <p>Clothing stands out as a highly profitable category with a wide spread. Furniture shows inconsistent profits, with some losses, suggesting it needs further attention.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/treemap_subcategory_sales.png">
+        <p>The treemap shows Phones and Chairs as dominant subcategories by sales. It visually identifies top revenue drivers and areas to focus on for marketing.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/monthly_sales_trend.png">
+        <p>Monthly sales exhibit seasonality with repeating patterns. Peaks during certain months may correspond to sales campaigns, holidays, or budget cycles.</p>
+      </div>
+      <div class="eda-slide">
+        <img src="images/daily_profit_trend.png">
+        <p>Daily profits show volatility with several negative profit days, indicating returns, discounts, or operational losses. Overall, there’s no consistent upward or downward trend.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Clustering Process</h2>
+    <p>After scaling and preprocessing the data, I applied the Elbow Method to determine the optimal number of clusters. KMeans was then used to divide the customers into segments.</p>
+  </section>
+
+  <section>
+    <h2>Cluster Results</h2>
+    <img class="cluster-image" src="images/cluster_scatter.png">
+    <img class="cluster-image" src="images/cluster_result.png">
+  </section>
+
+  <section>
+    <h2>Insights</h2>
+    <p>Each cluster represented different customer types. For instance, one group showed high spending — ideal for premium marketing. Another segment had low spending — suitable for budget offerings.</p>
+    <p>So, I think we should focuse on group 1 customer instead of group 0 customer that will make us more profitable.</p>
+  </section>
+
+  <section>
+    <h2>My Thoughts</h2>
+    <p>Initially, understanding the correct number of clusters and interpreting them was challenging. Visualizing the clusters helped a lot. I learned how to better preprocess and scale data to get meaningful results.</p>
+  </section>
+
+  <section>
+    <h2>What I Learned</h2>
+    <ul>
+      <li>Hands-on with KMeans and unsupervised learning techniques.</li>
+      <li>Data preprocessing and feature scaling.</li>
+      <li>Visualization storytelling using charts and interactivity.</li>
+      <li>Importance of choosing the right metrics and methods for real-world applications.</li>
+    </ul>
+  </section>
+
+  <section>
+  <h2>Tech Stack</h2>
+  <ul>
+    <li>Python (Pandas, Matplotlib, Seaborn, Scikit-learn)</li>
+    <li>HTML, CSS (for this page)</li>
+    <li>Jupyter Notebook</li>
+  </ul>
+</section>
+
+  <footer>
+    <p>Made by Harsh Agarwal</p>
+  </footer>
+</body>
+</html>

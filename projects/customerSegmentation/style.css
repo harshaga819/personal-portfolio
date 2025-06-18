@@ -1,0 +1,121 @@
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+      transition: background 0.5s, color 0.5s;
+    }
+    body.dark-mode {
+      background: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: linear-gradient(to right, #0077cc, #005fa3);
+      color: #fff;
+      padding: .5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 960px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, background 0.3s;
+    }
+    section:hover {
+      transform: translateY(-3px);
+      background: #fdfdfd;
+    }
+    h2 {
+      color: #0077cc;
+      margin-top: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .button {
+      display: inline-block;
+      margin: .1rem auto;
+      padding: 0.7rem 1.2rem;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .button:hover {
+      background: #005fa3;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0077cc;
+      color: #fff;
+      margin-top: 4rem;
+    }
+    .link{
+      text-align: center;
+      box-shadow: none;
+      background: #f4f4f4;
+    }
+    .eda-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    .eda-slide {
+      flex: 0 0 90%;
+      scroll-snap-align: center;
+      background: #f6f4f4;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 0rem .5rem;
+      transition: transform 0.3s;
+    }
+    .eda-slide img {
+      border-radius: 10px;
+      max-width: 100%;
+      display: block;
+    }
+    .eda-slide p {
+      margin-top: 0.5rem;
+    }
+    .cluster-image {
+      display: block;
+      margin: 1rem auto;
+      max-width: 90%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      section {
+        padding: 1.2rem;
+        margin: 1.2rem;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
