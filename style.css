@@ -224,15 +224,16 @@ li{
     color: var(--name-text-color);
 }
 .skill-contant{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 4rem;
+    column-count: 2;
+    column-gap: 4rem;
     padding: 2rem 4rem;
     width: 100%;
-    align-items: start;
 }
 .skill-name{
+    display: inline-block;
     width: 100%;
+    margin-bottom: 2rem;
+    break-inside: avoid;
 }
 .skill-name-heading{
     font-size: 1.5rem;
@@ -621,11 +622,8 @@ textarea::placeholder {
         text-align:center;
     }
     .skill-contant{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    column-count: 1;
     padding: 1rem;
-    width: 100%;
 }
 
 .skill-name{
