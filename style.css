@@ -224,15 +224,15 @@ li{
     color: var(--name-text-color);
 }
 .skill-contant{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
     padding: 2rem 4rem;
     width: 100%;
+    align-items: start;
 }
 .skill-name{
-    display: block;
-    margin: 1rem 3.5rem;
+    width: 100%;
 }
 .skill-name-heading{
     font-size: 1.5rem;
@@ -551,7 +551,7 @@ textarea::placeholder {
         scroll-padding-top: 70px;
         scroll-behavior: smooth; 
     }
-    .body{
+    body{
         overflow-x: hidden;
     }
     .nav {
@@ -621,21 +621,37 @@ textarea::placeholder {
         text-align:center;
     }
     .skill-contant{
-        padding: 0rem;
-        width: 100%;
-    }
-    .skill-name{
-        text-align: start;
-    }
-    .skill-name-heading{
-        text-align: center;
-    }
-    .skill-dashboard{
-        width: 100%;
-    }
-    .sub-skill{
-        width: 15rem;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.skill-name{
+    width: 100%;
+    margin: 0;
+}
+
+.skill-name-heading{
+    text-align: center;
+}
+
+.skill-dashboard{
+    width: 100%;
+}
+
+.sub-skill{
+    width: 100%;
+}
+
+.sub-skill-name{
+    width: 100%;
+}
+
+.sub-skill-bar{
+    width: 100%;
+}
     .project-content{
         flex-wrap: wrap;
     }
