@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatWithWebsite</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/projects/style.css" />
+</head>
+
+<body class="dark-mode">
+
+  <div class="project-container">
+
+    <h1 class="project-title">ChatWithWebsite</h1>
+
+    <div class="project-links">
+
+      <a class="git-button"
+         href="https://github.com/harshaga819/ChatWithWebsite"
+         target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Description</h3>
+
+      <p>
+        <span class="highlight">
+          <b>ChatWithWebsite</b>
+        </span>
+        is an AI-powered web application that enables users to interact with any publicly accessible website using natural language. Instead of manually browsing through multiple web pages, users simply provide a website URL and ask questions. The chatbot automatically extracts the website content, understands its context, and generates accurate, context-aware answers in real time.
+      </p>
+
+      <p>
+        The application is built using the <b>Retrieval-Augmented Generation (RAG)</b> architecture, which combines semantic document retrieval with a Large Language Model (LLM). Once a website URL is submitted, the application loads the webpage content, processes the extracted text, divides it into meaningful chunks, converts those chunks into vector embeddings, and stores them in a vector database. When the user asks a question, the chatbot retrieves the most relevant information before generating the final response.
+      </p>
+
+      <p>
+        The project uses <b>LangChain WebBaseLoader</b> to extract website content, <b>Recursive Character Text Splitter</b> for intelligent text chunking, <b>HuggingFace Sentence Transformers</b> for creating semantic embeddings, and <b>FAISS</b> as the vector database for efficient similarity search. The retrieved context is then passed to the <b>Groq LLM</b> through <b>LangChain</b>, enabling fast, relevant, and context-aware responses.
+      </p>
+
+      <p>
+        A modern and user-friendly <b>Streamlit</b> interface allows users to enter a website URL, process the website with a single click, and ask unlimited questions about its content. The chatbot responds instantly while ensuring that every answer is based on the information available on the provided website.
+      </p>
+
+      <p>
+        The complete workflow follows an end-to-end RAG pipeline consisting of website content loading, text extraction, preprocessing, chunk generation, embedding creation, vector database indexing, semantic retrieval, prompt construction, and answer generation. This ensures that responses remain grounded in the website's content rather than relying solely on the language model's pre-trained knowledge.
+      </p>
+
+      <p>
+        The application can be used to explore documentation websites, company websites, blogs, educational resources, product documentation, knowledge bases, and technical articles. It significantly reduces the time required to locate information by allowing users to ask questions directly instead of manually navigating through multiple pages.
+      </p>
+
+      <p>
+        This project demonstrates the practical implementation of <b>Large Language Models</b>, <b>Natural Language Processing</b>, <b>Semantic Search</b>, and <b>Retrieval-Augmented Generation (RAG)</b> for intelligent web content analysis. It showcases the development of a production-style AI application capable of transforming static websites into interactive conversational assistants.
+      </p>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Key Features</h3>
+
+      <ol>
+        <li>Chat with any publicly accessible website using its URL.</li>
+        <li>Automatically extracts and processes website content.</li>
+        <li>Intelligent text chunking for efficient retrieval.</li>
+        <li>Semantic search using vector embeddings.</li>
+        <li>Context-aware question answering using RAG.</li>
+        <li>Fast response generation powered by Groq LLM.</li>
+        <li>User-friendly Streamlit interface.</li>
+        <li>Accurate answers based on website content.</li>
+        <li>Supports documentation sites, blogs, and knowledge bases.</li>
+        <li>Eliminates the need to manually search through webpages.</li>
+      </ol>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Technologies Used</h3>
+
+      <ol>
+        <li>Python</li>
+        <li>LangChain</li>
+        <li>Streamlit</li>
+        <li>Groq LLM</li>
+        <li>WebBaseLoader</li>
+        <li>FAISS Vector Database</li>
+        <li>HuggingFace Embeddings</li>
+        <li>Sentence Transformers</li>
+        <li>Recursive Character Text Splitter</li>
+        <li>Prompt Templates</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>Semantic Search</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Large Language Models (LLMs)</li>
+      </ol>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Chatbot</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/projects/style.css" />
+</head>
+
+<body class="dark-mode">
+
+  <div class="project-container">
+
+    <h1 class="project-title">PDF Chatbot</h1>
+
+    <div class="project-links">
+
+      <a class="git-button"
+         href="https://github.com/harshaga819/PDFChatbot.git"
+         target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Description</h3>
+
+      <p>
+        <span class="highlight">
+          <b>PDF Chatbot</b>
+        </span>
+        is an AI-powered document question-answering application that allows users to interact with PDF files using natural language. Instead of manually searching through lengthy documents, users can upload one or multiple PDF files and ask questions in plain English. The chatbot retrieves the most relevant information from the uploaded documents and generates accurate, context-aware answers in real time.
+      </p>
+
+      <p>
+        The project is built using the <b>Retrieval-Augmented Generation (RAG)</b> architecture, which combines semantic document retrieval with a Large Language Model (LLM). After the PDF is uploaded, the application extracts the text, splits it into manageable chunks, converts those chunks into vector embeddings, and stores them in a vector database. When a user submits a question, the chatbot performs a semantic similarity search to retrieve the most relevant document chunks before generating a response.
+      </p>
+
+      <p>
+        The application uses <b>PyPDF</b> for reading PDF documents, <b>Recursive Character Text Splitter</b> from LangChain for intelligent chunking, <b>HuggingFace Sentence Transformers</b> for creating dense vector embeddings, and <b>FAISS</b> as the vector database for fast similarity search. The final answer is generated using the <b>Groq LLM</b> integrated through <b>LangChain</b>, enabling fast and accurate responses with contextual understanding.
+      </p>
+
+      <p>
+        A clean and interactive <b>Streamlit</b> interface allows users to upload PDF files, process documents with a single click, and chat with them in real time. The interface provides a smooth conversational experience while maintaining the context of the uploaded documents throughout the session.
+      </p>
+
+      <p>
+        The project follows a complete end-to-end RAG pipeline consisting of document loading, text preprocessing, chunk generation, embedding creation, vector database indexing, semantic retrieval, prompt construction, and response generation. This architecture ensures that answers are grounded in the uploaded documents instead of relying solely on the language model's internal knowledge.
+      </p>
+
+      <p>
+        The chatbot is capable of handling large documents such as research papers, books, technical documentation, company reports, legal documents, academic notes, and user manuals. Since answers are generated from the retrieved document content, the system produces more reliable and document-specific responses than a standalone LLM.
+      </p>
+
+      <p>
+        This project demonstrates practical applications of <b>Large Language Models</b>, <b>Natural Language Processing</b>, <b>Semantic Search</b>, and <b>Retrieval-Augmented Generation (RAG)</b> for intelligent document analysis. It showcases the complete workflow of building a production-style AI application using modern LLM frameworks and vector databases.
+      </p>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Key Features</h3>
+
+      <ol>
+        <li>Upload one or multiple PDF documents.</li>
+        <li>Extracts text automatically from uploaded PDFs.</li>
+        <li>Intelligent document chunking for efficient retrieval.</li>
+        <li>Semantic search using vector embeddings.</li>
+        <li>Context-aware question answering using RAG.</li>
+        <li>Fast response generation with Groq LLM.</li>
+        <li>Maintains conversation based on uploaded documents.</li>
+        <li>User-friendly Streamlit interface.</li>
+        <li>Supports large technical and research documents.</li>
+        <li>Accurate answers grounded in document content.</li>
+      </ol>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Technologies Used</h3>
+
+      <ol>
+        <li>Python</li>
+        <li>LangChain</li>
+        <li>Streamlit</li>
+        <li>Groq LLM</li>
+        <li>PyPDF</li>
+        <li>FAISS Vector Database</li>
+        <li>HuggingFace Embeddings</li>
+        <li>Sentence Transformers</li>
+        <li>Recursive Character Text Splitter</li>
+        <li>Prompt Templates</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>Semantic Search</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Large Language Models (LLMs)</li>
+      </ol>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
