@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic RAG Chatbot</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/projects/style.css" />
+</head>
+
+<body class="dark-mode">
+
+  <div class="project-container">
+
+    <h1 class="project-title">Agentic RAG Chatbot</h1>
+
+    <div class="project-links">
+
+      <a class="git-button"
+         href="https://github.com/harshaga819/agentic-rag-chatbot"
+         target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Description</h3>
+
+      <p>
+        <span class="highlight">
+          <b>Agentic RAG Chatbot</b>
+        </span>
+        is a multi-tool conversational AI assistant that goes beyond simple document Q&A. Rather than being locked into a single mode, the assistant behaves like an agent — it holds a normal conversation, answers questions grounded in an uploaded PDF or a website, looks up live stock prices, and searches the web, deciding on its own which capability a given question actually requires.
+      </p>
+
+      <p>
+        At its core, the project is built using <b>LangGraph</b>, which models the assistant as a state graph rather than a fixed prompt chain. A single <b>chat</b> node handles the language model's reasoning, and a conditional edge decides, turn by turn, whether the model needs to call a tool or can respond directly. When a tool is required, control passes to a dedicated <b>tools</b> node and back to the chat node, so the conversation always ends with a natural, LLM-generated response rather than raw tool output.
+      </p>
+
+      <p>
+        Document intelligence is handled through a <b>Retrieval-Augmented Generation (RAG)</b> pipeline. Users can upload a PDF or submit any website URL per chat thread; the content is loaded, split into overlapping chunks, converted into vector embeddings using <b>HuggingFace Sentence Transformers</b>, and indexed with <b>FAISS</b> for fast similarity search. When a question relates to the uploaded content, the assistant retrieves the most relevant chunks before answering — keeping responses grounded in the actual source rather than the model's own assumptions.
+      </p>
+
+      <p>
+        Beyond documents, the assistant is extended with real-time tools: a web search tool for current information not present in any document, and a live stock price lookup tool powered by the Alpha Vantage API. These are exposed to the language model (hosted on <b>Groq</b>, running <b>Llama 3.3 70B</b>) as callable functions, letting the model itself decide when a plain answer isn't enough and a live lookup is needed.
+      </p>
+
+      <p>
+        Every conversation is persisted using <b>SQLite-based checkpointing</b> built into LangGraph, with each chat assigned its own thread ID. This means a user can run multiple independent conversations side by side — each with its own uploaded PDF or website — close the app, and resume any thread later with full message history intact.
+      </p>
+
+      <p>
+        The interface is built with <b>Streamlit</b>, supporting streaming responses, a sidebar for managing multiple chat threads, and simple in-chat controls for uploading a PDF or triggering website ingestion. The result is a single assistant that feels like a normal chatbot on the surface, but is quietly orchestrating retrieval, tool calls, and long-term memory underneath.
+      </p>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Key Features</h3>
+
+      <ol>
+        <li>Handles normal conversation and document-grounded Q&A in the same chat.</li>
+        <li>Chat with an uploaded PDF, scoped to that specific conversation thread.</li>
+        <li>Chat with any public website by simply providing its URL.</li>
+        <li>Automatic tool selection — the model decides when to retrieve, search, or answer directly.</li>
+        <li>Real-time web search for information beyond any uploaded document.</li>
+        <li>Live stock price lookup via a dedicated financial data tool.</li>
+        <li>Persistent, multi-thread conversation memory using SQLite checkpointing.</li>
+        <li>Ability to resume any past conversation with full history intact.</li>
+        <li>Streaming assistant responses for a responsive chat experience.</li>
+        <li>Clean Streamlit interface for managing chats, uploads, and website ingestion.</li>
+      </ol>
+
+    </div>
+
+    <div class="section-box">
+
+      <h3>Technologies Used</h3>
+
+      <ol>
+        <li>Python</li>
+        <li>LangGraph</li>
+        <li>LangChain</li>
+        <li>Streamlit</li>
+        <li>Groq LLM (Llama 3.3 70B)</li>
+        <li>FAISS Vector Database</li>
+        <li>HuggingFace Embeddings</li>
+        <li>Sentence Transformers</li>
+        <li>PyPDFLoader &amp; WebBaseLoader</li>
+        <li>Recursive Character Text Splitter</li>
+        <li>SQLite Checkpointing</li>
+        <li>Tool-Calling Agents</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>Alpha Vantage Stock API</li>
+        <li>DuckDuckGo Search</li>
+      </ol>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
