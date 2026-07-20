@@ -1,104 +1,205 @@
-  :root {
-    --dark-bg: #0a0a23;
-    --card-bg-dark:rgb(5, 10, 48);
-    --text-dark: #ffffff;
-    --highlight: #22d3ee;
-    --accent: #6366f1;
-    --shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.4);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #0d181d, #234651, rgb(19, 23, 56));
-    color: var(--text-dark);
+*{
+    box-sizing: border-box;
+}
+:root {
+    --bg: #f7f8fc;
+    --surface: #ffffff;
+    --border: #e6e8f0;
+    --text: #1c2130;
+    --text-muted: #616a7d;
+    --accent: #3b5bdb;
+    --accent-2: #f76707;
+    --accent-gradient: linear-gradient(120deg, var(--accent), var(--accent-2));
+    --shadow-sm: 0 2px 10px rgba(30, 41, 59, 0.06);
+    --shadow-md: 0 10px 30px rgba(30, 41, 59, 0.08);
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        radial-gradient(50rem 26rem at 8% 0%, rgba(59, 91, 219, 0.18), transparent 55%),
+        radial-gradient(45rem 24rem at 100% 0%, rgba(247, 103, 7, 0.16), transparent 55%),
+        radial-gradient(60rem 34rem at 50% 100%, rgba(59, 91, 219, 0.09), transparent 60%),
+        linear-gradient(160deg, #e9eefb 0%, #f7f8fc 45%, #fdf0e4 100%);
+    background-attachment: fixed;
+    color: var(--text);
     margin: 0;
-    padding: 2rem;
-  }
-  
-  .project-container {
-    max-width: 1000px;
+    padding: 2rem 1rem 4rem;
+}
+
+.project-container {
+    max-width: 900px;
     margin: auto;
     border-radius: 1rem;
     padding: .5rem;
-  }
-  
-  .project-title {
+}
+
+.project-title {
+    position: relative;
     text-align: center;
-    font-size: 2.5rem;
-    color: var(--highlight);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.project-title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 4.5rem;
+    height: 5px;
+    border-radius: 3px;
+    background: var(--accent-gradient);
+}
+
+.back-link{
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    color: var(--text-muted);
+    font-weight: 500;
     margin-bottom: 1.5rem;
-  }
-  
-  .project-links {
+    transition: color 0.2s ease;
+}
+.back-link:hover{
+    color: var(--accent);
+}
+
+.project-links {
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  .project-links a {
-    margin: 0 1rem;
-    font-size: 2rem;
-    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    color: var(--text);
     text-decoration: none;
-  }
-  
-  .project-links .live-button {
-    background: var(--accent);
-    padding: 0.6rem 1.2rem;
+}
+
+.project-links .git-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    font-size: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-links .git-button:hover{
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+.git-button i{
+    display: inline-block;
+}
+
+.project-links .live-button {
+    background: var(--accent-gradient);
+    padding: 0.7rem 1.4rem;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 2rem;
     font-size: 1rem;
+    font-weight: 600;
     color: white;
     cursor: pointer;
     text-decoration: none;
-  }
-  
-  .project-links .live-button:hover {
-    background: #4f46e5;
-  }
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-  .git-button i{
-    display: inline-block;
-    transform: scale(2);
-  }
-  
-  .section-box {
-    background-color: var(--card-bg-dark);
+.project-links .live-button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.section-box {
+    position: relative;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: var(--shadow-dark);
-    margin-bottom: 2rem;
-  }
-  
-  .section-box h3 {
-    font-size: 1.8rem;
-    color: var(--highlight);
+    padding: 1.7rem 1.5rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.section-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+}
+.section-box:nth-of-type(even)::before{
+    background: linear-gradient(120deg, var(--accent-2), var(--accent));
+}
+
+.section-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent);
     margin-bottom: 1rem;
-  }
-  
-  .section-box p, .section-box ul, .section-box ol {
+}
+
+.section-box p, .section-box ul, .section-box ol {
     font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-dark);
-  }
-  
-  .section-box li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .highlight {
-    color: var(--highlight);
-  }
-  
-  @media (max-width: 768px) {
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.section-box ul, .section-box ol {
+    display: block;
+    justify-content: normal;
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-box li {
+    margin-bottom: 0.6rem;
+    padding-left: 1.4rem;
+    position: relative;
+}
+
+.section-box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+}
+
+.highlight {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
     .project-title {
-      font-size: 2rem;
+        font-size: 1.8rem;
     }
-  
+
     .project-links a {
-      font-size: 1.5rem;
+        font-size: 1.1rem;
     }
-  
+
     .section-box p {
-      font-size: 0.95rem;
+        font-size: 0.95rem;
     }
-  }
+}

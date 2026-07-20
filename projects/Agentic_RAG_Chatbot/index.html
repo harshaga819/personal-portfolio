@@ -3,36 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agentic RAG Chatbot</title>
+  <meta name="description" content="Agentic RAG Chatbot: a multi-tool conversational AI assistant built with LangGraph, LangChain, FAISS and Groq, combining document/website RAG with live tools." />
+  <title>Agentic RAG Chatbot | Harsh Agarwal</title>
 
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/projects/style.css" />
 </head>
 
-<body class="dark-mode">
+<body>
 
   <div class="project-container">
+
+    <a class="back-link" href="/index.html#projects">&larr; Back to projects</a>
 
     <h1 class="project-title">Agentic RAG Chatbot</h1>
 
     <div class="project-links">
-
-      <a class="git-button"
-         href="https://github.com/harshaga819/agentic-rag-chatbot"
-         target="_blank">
+      <a class="git-button" href="https://github.com/harshaga819/agentic-rag-chatbot" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
         <i class="bx bxl-github"></i>
       </a>
-
     </div>
 
     <div class="section-box">
-
       <h3>Description</h3>
 
       <p>
-        <span class="highlight">
-          <b>Agentic RAG Chatbot</b>
-        </span>
+        <span class="highlight"><b>Agentic RAG Chatbot</b></span>
         is a multi-tool conversational AI assistant that goes beyond simple document Q&A. Rather than being locked into a single mode, the assistant behaves like an agent — it holds a normal conversation, answers questions grounded in an uploaded PDF or a website, looks up live stock prices, and searches the web, deciding on its own which capability a given question actually requires.
       </p>
 
@@ -55,14 +51,11 @@
       <p>
         The interface is built with <b>Streamlit</b>, supporting streaming responses, a sidebar for managing multiple chat threads, and simple in-chat controls for uploading a PDF or triggering website ingestion. The result is a single assistant that feels like a normal chatbot on the surface, but is quietly orchestrating retrieval, tool calls, and long-term memory underneath.
       </p>
-
     </div>
 
     <div class="section-box">
-
       <h3>Key Features</h3>
-
-      <ol>
+      <ul>
         <li>Handles normal conversation and document-grounded Q&A in the same chat.</li>
         <li>Chat with an uploaded PDF, scoped to that specific conversation thread.</li>
         <li>Chat with any public website by simply providing its URL.</li>
@@ -73,15 +66,12 @@
         <li>Ability to resume any past conversation with full history intact.</li>
         <li>Streaming assistant responses for a responsive chat experience.</li>
         <li>Clean Streamlit interface for managing chats, uploads, and website ingestion.</li>
-      </ol>
-
+      </ul>
     </div>
 
     <div class="section-box">
-
       <h3>Technologies Used</h3>
-
-      <ol>
+      <ul>
         <li>Python</li>
         <li>LangGraph</li>
         <li>LangChain</li>
@@ -97,8 +87,7 @@
         <li>Retrieval-Augmented Generation (RAG)</li>
         <li>Alpha Vantage Stock API</li>
         <li>DuckDuckGo Search</li>
-      </ol>
-
+      </ul>
     </div>
 
   </div>
