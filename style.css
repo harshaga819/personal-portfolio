@@ -217,7 +217,7 @@ textarea:focus-visible {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 3rem 2rem;
+    padding: 0rem 3rem;
     max-width: 1200px;
     margin: 0 auto;
     gap: 1rem;
@@ -289,7 +289,7 @@ textarea:focus-visible {
 }
 
 .home-image {
-    width: 45%;
+    width: 65%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -312,8 +312,8 @@ textarea:focus-visible {
 
 .home-image img {
     position: relative;
+    height: 43rem;
     z-index: 1;
-    max-height: 28rem;
     width: auto;
     max-width: 100%;
     filter: drop-shadow(var(--shadow-lg));
@@ -368,7 +368,7 @@ textarea:focus-visible {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background: url(assets/images/profile.jpg);
+    background: url(assets/images/profile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
